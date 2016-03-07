@@ -1,0 +1,36 @@
+$slate-blue: rgb(41,43,56);
+$burnt-orange: rgb(238,71,35);
+$border: 2px solid red;
+$width: 600px;
+$margin-left: 13%;
+
+
+h1 {
+  color: $burnt-orange;
+  text-align: center;
+}
+
+.chessboard-container{
+  // border: $border;
+  width: $width;
+  margin-left: $margin-left*2;
+}
+
+th {
+  padding: 1em;
+  color: $burnt-orange;
+}
+
+td {
+  width: $width/8;
+  height: $width/8;
+}
+
+// SOURCED: https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child
+.row-odd td:nth-child(2n+1) {
+  background-color: $slate-blue;
+}
+
+.row-even td:nth-child(2n) {
+  background-color: $slate-blue;
+}
